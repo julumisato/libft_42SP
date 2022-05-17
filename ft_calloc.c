@@ -6,7 +6,7 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 22:14:00 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/20 20:42:07 by jusato           ###   ########.fr       */
+/*   Updated: 2022/05/02 03:51:36 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 void	*ft_calloc(size_t n, size_t size)
 {
 	void	*ptr;
+	size_t	total;
 
-	if (sizeof(size_t) / size < n)
+	total = n * size;
+	if (n != 0 && total / n != size)
 		return (NULL);
 	ptr = (char *)malloc(n * size);
 	if (ptr == NULL)

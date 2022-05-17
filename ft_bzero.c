@@ -6,7 +6,7 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 23:03:20 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/07 00:58:39 by jusato           ###   ########.fr       */
+/*   Updated: 2022/04/28 01:54:03 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *str, size_t n)
 	newstr = (char *)str;
 	while (n != 0)
 	{
-		newstr[n -1] = '\0';
+		newstr[n -1] = 0;
 		n --;
 	}
 }

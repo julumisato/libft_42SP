@@ -6,13 +6,13 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 01:39:21 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/06 02:13:32 by jusato           ###   ########.fr       */
+/*   Updated: 2022/04/27 22:36:47 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	if (c == ' ' || (c >= '\t' && c <= '\r'))
 		return (1);

@@ -6,15 +6,15 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 19:49:53 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/20 21:00:52 by jusato           ###   ########.fr       */
+/*   Updated: 2022/04/27 22:35:51 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_countwords(char *s, char c);
-void	*ft_free(char **array);
-char	**ft_makearray(const char *s, char c, char **array);
+static size_t	ft_countwords(char *s, char c);
+static void		*ft_free(char **array);
+static char		**ft_makearray(const char *s, char c, char **array);
 
 char	**ft_split(char const *s, char c)
 {
@@ -35,7 +35,7 @@ char	**ft_split(char const *s, char c)
 	return (array);
 }
 
-size_t	ft_countwords(char *s, char c)
+static size_t	ft_countwords(char *s, char c)
 {
 	size_t	count;
 
@@ -55,7 +55,7 @@ size_t	ft_countwords(char *s, char c)
 	return (count);
 }
 
-void	*ft_free(char **array)
+static void	*ft_free(char **array)
 {
 	while (*array)
 		free(*array);
@@ -63,7 +63,7 @@ void	*ft_free(char **array)
 	return (NULL);
 }
 
-char	**ft_makearray(const char *s, char c, char **array)
+static char	**ft_makearray(const char *s, char c, char **array)
 {
 	size_t	size;
 	size_t	i;

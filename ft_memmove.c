@@ -6,7 +6,7 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 04:14:06 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/20 00:39:21 by jusato           ###   ########.fr       */
+/*   Updated: 2022/04/29 04:43:37 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			d[i] = s[i];
 			i ++;
 		}
-		return (dest);
 	}
-	ft_memcpy(dest, src, n);
+	else
+		ft_memcpy(dest, src, n);
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 21:01:58 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/19 01:47:26 by jusato           ###   ########.fr       */
+/*   Updated: 2022/04/29 21:06:42 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	size_t	i;
 	size_t	ss_len;
 
 	if (s == NULL)
 		return (NULL);
-	i = 0;
 	if (start < ft_strlen(s))
 	{
 		ss_len = ft_strlen(s) - start;
@@ -33,6 +31,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		ft_strlcpy(substr, &s[start], len + 1);
 	}
 	else
-		substr = (char *)ft_calloc(1, 1);
+		substr = (char *)ft_calloc(1, sizeof(char));
 	return (substr);
 }

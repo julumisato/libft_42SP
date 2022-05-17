@@ -6,13 +6,13 @@
 /*   By: jusato <jusato@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 03:17:51 by jusato            #+#    #+#             */
-/*   Updated: 2022/04/19 20:12:09 by jusato           ###   ########.fr       */
+/*   Updated: 2022/04/27 22:40:27 by jusato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_itoalen(long int n)
+static size_t	ft_itoalen(long int n)
 {
 	size_t	len;
 
